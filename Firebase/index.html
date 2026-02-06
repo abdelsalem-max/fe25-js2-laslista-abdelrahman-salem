@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="./main.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+        <form>
+        <input type="text" name="name" id="name" placeholder="name">
+        <input type="text" name="admin" id="admin" placeholder="author">
+        <button>Add Book</button>
+    </form>
+    <div id="filtering">
+        <label for="">Sort</label>
+        <select name="" id="sort" autocomplete="off">
+            <option value="default" selected>Default</option>
+            <option value="azT" selected>A-Z-Title</option>
+            <option value="zaT" selected>Z-A-Title</option>
+            <option value="azF" selected>A-Z-Författare</option>
+            <option value="zaF" selected>Z-A-Författare</option>
+            <option value="TB" selected>Top->Bottom</option>
+            <option value="BT" selected>Bottom->Top</option>
+        </select>
+        <br>
+        <label for="">Filter</label>
+        <select name="" id="filter" autocomplete="off">
+            <option value="default" selected>Default</option>
+            <option value="favorite" selected>Favorite</option>
+        </select>
+    </div>
+    <div id="users"></div>
+</body>
+</html>
